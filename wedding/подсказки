@@ -1,0 +1,12 @@
+Virtualenv location: C:\Users\nekit\.virtualenvs\flask-WAN44cll
+лежат все виртуалки, моя называется фласк
+
+проверить установл пакеетники внутри данного вирт окружения: pip list
+PS C:\Users\nekit\PycharmProjects\flask> pip list
+Package    Version
+---------- -------
+pip        23.3.1
+setuptools 68.2.2
+wheel      0.41.3
+PS C:\Users\nekit\PycharmProjects\flask> python --version
+Python 3.11.4
