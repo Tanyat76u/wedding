@@ -1,127 +1,132 @@
-<!doctype html>
-<html lang="en" class="h-100" data-bs-theme="light" xmlns:line-height="http://www.w3.org/1999/xhtml">
-  <head>
-      <script src="/docs/5.3/assets/js/color-modes.js"></script>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="description" content="">
-      <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-      <meta name="generator" content="Hugo 0.118.2">
-      <title>Cover Template · Bootstrap v5.3</title>
-      <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/cover/">
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
-      <link href="/docs/5.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-      <!-- Favicons -->
-      <link rel="apple-touch-icon" href="/docs/5.3/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-      <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-      <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-      <link rel="manifest" href="/docs/5.3/assets/img/favicons/manifest.json">
-      <link rel="mask-icon" href="/docs/5.3/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
-      <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon.ico">
-      <meta name="theme-color" content="#712cf9">
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel='stylesheet' href="css/style.css">
+	<title>Document</title>
+</head>
+<body>
+	<h1>Hello</h1>
+	<!-- <h2>вдлавдал</h2>
+	<font color="yellow">hello</font>
+	<font color="blue">Синий шрифт</font>
+	<p style="color:#0000FF">Синий цвет текста</p>
+	<font color="red" size="4" >Красный шрифт большего размера</font>
+	<p class='oblique'>Наклонный текст</p>
+  	<h1 style="background-color:#0000FF">Дорогие гости!</h1>
+	<h1 font-color=18px size=10px>дорогие</h1>
+ 	<h2 bgcolor="#c0c0c0" background="green">Дорогие друзья</h2>
+	<h1 style="background-color:#17252A">Пригоаш</h1> --!>
+	<style type="text/css">
+
+	body{
+	margin: 10px 50px 20px;
+	background-color: #172834;
+	color: #968599;
+	padding: 0 130px;
+	display: flex;
+	flex-direction: column;
+	flex: auto;
+	margin-top: 0px;
+	}
 
 
-    <!-- Custom styles for this template -->
-    <link href="cover.css" rel="stylesheet">
-  </head>
-  <body class="d-flex h-100 text-center text-bg-dark">
-    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
-      <symbol id="check2" viewBox="0 0 16 16">
-        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
-      </symbol>
-      <symbol id="circle-half" viewBox="0 0 16 16">
-        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
-      </symbol>
-      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
-        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
-        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
-      </symbol>
-      <symbol id="sun-fill" viewBox="0 0 16 16">
-        <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
-      </symbol>
-    </svg>
-
-    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
-      <!--<button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
-              id="bd-theme"
-              type="button"
-              aria-expanded="false"
-              data-bs-toggle="dropdown"
-              aria-label="Toggle theme (auto)">--!>
-        <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
-        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
-      </button>
-      <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
-        <li>
-          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
-            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#sun-fill"></use></svg>
-            Light
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-          </button>
-        </li>
-        <li>
-          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
-            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
-            Dark
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-          </button>
-        </li>
-        <li>
-          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
-            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#circle-half"></use></svg>
-            Auto
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-          </button>
-        </li>
-      </ul>
-    </div>
-
-
-<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-  <header class="mb-auto">
-    <div>
-      <h3 class="float-md-start mb-0">Cover</h3>
-      <nav class="nav nav-masthead justify-content-center float-md-end">
-        <a class="nav-link fw-bold active" aria-current="page" href="#">Приглашение</a>
-        <a class="nav-link fw-bold" href="#">План дня</a>
-        <a class="nav-link fw-bold" href="#">Дресс-код</a>
-         <a class="nav-link fw-bold" href="#">Ответы на вопросы</a>
-        <a class="nav-link fw-bold" href="#">Контакты</a>
-      </nav>
-    </div>
-  </header>
-
-  <main class="px-3">
-    <h1>Дорогие родные и друзья!</h1>
-    <p class="lead">Приглашаем разделить с нами радость особенного для нас события и стать свидетелями начала нашей семейной жизни!</p>
-    <h2>Ждем Вас</h2>
-    <img src="C:\Users\nekit\PycharmProjects\wedding\wedding\templates\date.png" alt="Описание изображения 25 июля 2024">
-    <p class="lead">Загородный клуб "Голицын клуб"</p>
-    <p class="lead">Московская область, Одинцовский городской округ, М-1 Беларусь, 47-й километр, 45</p>
-   <!-- <a href="#" class="btn btn-lg btn-light fw-bold border-white bg-white">нажми</a> -->
-
-   <!--  <div class="crop">
-    <img src="https://images.unsplash.com/photo-1544592732-83bbbfc46783?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
-    </div> -->
-    <div class="tn-atom t-bgimg loaded" data-original="https://grizly.club/uploads/posts/2023-02/1675330065_grizly-club-p-evkalipt-klipart-4.png" style="background-image:url('https://grizly.club/uploads/posts/2023-02/1675330065_grizly-club-p-evkalipt-klipart-4.png');"></div>
-  <h1>Как добраться?</h1>
-  </main>
-
-    <div id="wrapper">
-    <section class="s1">
- <!--   <iframe src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3e7de48f673bb1543545c0768cd3348296d0fa321f26d0d56ee4dd22b5bfc830&amp;width=602&amp;height=439&amp;lang=ru_RU&amp;scroll=true"
-      width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
-    <script charset="utf-8" type="text/javascript" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3e7de48f673bb1543545c0768cd3348296d0fa321f26d0d56ee4dd22b5bfc830&amp;width=800 auto;height=500: margin-left: auto;  margin-right: auto;"></script>
-    </section>
-    </div>
-  <!--  <ymaps class="ymaps-2-1-79-events-pane ymaps-2-1-79-user-selection-none" unselectable="on" style="height: 100%; width: 100%; top: 0px; left: 0px; position: absolute; z-index: 2500; cursor: url(&quot;https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3e7de48f673bb1543545c0768cd3348296d0fa321f26d0d56ee4dd22b5bfc830&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true) 16 16, url(&quot;https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3e7de48f673bb1543545c0768cd3348296d0fa321f26d0d56ee4dd22b5bfc830&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true&quot;), move; align-items: center; box-sizing: border-box; color: white; display: flex; justify-content: center; font-size: 22px; font-family: Arial, sans-serif; opacity: 0; padding: 25px; text-align: center; transition: opacity 0.3s ease 0s; touch-action: auto;"></ymaps>-->
-  <footer class="mt-auto text-white-50">
-    <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
-  </footer>
-</div>
-<script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
-    </body>
+</body>
 </html>
+<!--
+	}
 
- <!--<script charset="utf-8" type="text/javascript" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3e7de48f673bb1543545c0768cd3348296d0fa321f26d0d56ee4dd22b5bfc830&amp;width=455&amp;height=393&amp;lang=ru_RU&amp;scroll=true"></script> -->
+	background: -moz-linear-gradient(rgb(230, 121, 156);
+   background: -webkit-gradient(linear, 0 0, 0  100%, from(#D0ECF4), to(#D0ECF4), color-stop(0.5, #5BC9E1));
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00BBD6', endColorstr='#EBFFFF');
+   padding: 3px 7px;
+   color: #333;
+   -moz-border-radius: 5px;
+   -webkit-border-radius: 5px;
+   border-radius: 5px;
+   border: 1px solid #666;
+
+		--------------------------------
+		.timeline {
+    border-left: 3px solid #727cf5;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    background: rgba(114, 124, 245, 0.09);
+    margin: 0 auto;
+    letter-spacing: 0.2px;
+    position: relative;
+    line-height: 1.4em;
+    font-size: 1.03em;
+    padding: 50px;
+    list-style: none;
+    text-align: left;
+    max-width: 40%;
+}
+
+.timeline h1 {
+    font-weight: 300;
+    font-size: 1.4em;
+}
+
+.timeline h2,
+.timeline h3 {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.timeline .event {
+    border-bottom: 1px dashed #e8ebf1;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+
+.timeline .event:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+}
+
+.timeline .event:before,
+.timeline .event:after {
+    position: absolute;
+    display: block;
+    top: 0;
+}
+
+.timeline .event:before {
+    left: -207px;
+    content: attr(data-date);
+    text-align: right;
+    font-weight: 100;
+    font-size: 0.9em;
+    min-width: 120px;
+}
+
+.timeline .event:after {
+    -webkit-box-shadow: 0 0 0 3px #727cf5;
+    box-shadow: 0 0 0 3px #727cf5;
+    left: -55.8px;
+    background: #fff;
+    border-radius: 50%;
+    height: 9px;
+    width: 9px;
+    content: "";
+    top: 5px;
+}
+
+
+.rtl .timeline {
+    border-left: 0;
+    text-align: right;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    border-right: 3px solid #727cf5;
+}
+

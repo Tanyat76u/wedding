@@ -1,0 +1,10 @@
+h1 {
+  color: blue;
+  border: 3px solid currentColor;
+  color: green;
+}
+h2{
+    font-family: Arial, Helvetica, Verdana, sans-serif; /* Гарнитура шрифта */
+    font-size: 100%; /* Размер текста */
+    font-weight: lighter; /* Светлое начертание */
+   }
