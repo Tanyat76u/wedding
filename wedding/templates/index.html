@@ -7,117 +7,233 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title> Wedding </title>
 	<!-- Подключение CSS файла bootstrap 5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-
 </head>
 <body>
-<div class="container">
-    <header class="d-flex justify-content-center py-3">
-      <ul class="nav nav-pills">
-        <li class="nav-item"><a href="/index" class="nav-link" style="color: #89AC76">Отвечаем на ваши вопросы</a></li>
-        <li class="nav-item"><a href="/get_mock" class="nav-link" style="color: #89AC76">Программа свадебного дня</a></li>
-        <li class="nav-item"><a href="/create_mock" class="nav-link" style="color: #89AC76">Как добраться</a></li>
-      </ul>
-    </header>
-</div>
-<div class="container">
-    <style>
-        h1 {
-            color: #89AC76;
+<style>
+.header {
+    width: 100%;
+    background: #e0d5c1;
+    padding: 0px 0;
+    z-index: 100;
+    font-size: 2vw;
+}
+
+</style>
+<header class="header">
+    <div class="d-flex justify-content-center py-3" style= "background-color: #e8e0d1">
+  <!--  <header class="d-flex justify-content-center py-3"> -->
+  <ul class="nav nav-pills">
+      <!--<li class="nav-item"><a href="#section-guest" class="nav-link" style="color: #ffffff">Приглашение</a></li>
+     -->
+      <li class="nav-item"><a href="#section-faq" class="nav-link" style="color: #5e625f">Отвечаем на ваши вопросы</a></li>
+      <li class="nav-item"><a href="#section-program" class="nav-link" style="color: #5e625f">Программа свадебного дня</a></li>
+      <li class="nav-item"><a href="#section-register" class="nav-link" style="color: #5e625f">Как добраться</a></li>
+  </ul>
+    </div>
+</header>
+<style>
+img{
+    text-align:center;
+    margin:0vw auto;
+    margin-bottom: 2vw;
+}
+img a{
+
+    display:inline-block;
+    text-decoration:none;
+    color:white;
+ }
+    p{
+        color: #31332f;
+        position: static;
+        text-align: justify;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 4vw;
+        margin-top: 3vw;
+        margin-left: 3vw;
+        margin-right: 3vw;
+}
+.p {
+    position: absolute;
+    text-transform: uppercase;
+    color: white;
+    width: auto;
+    background: #00000094;
+    padding: 10vw;
+    text-align: center;
+    font:  'Open Sans', sans-serif;
+    }
+h3{
+        color: black;
+        text-align: center;
+        position: static;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 5vw;
+
+}
+h1{
+        color: #ed8256;
+        text-align: center;
+        position: static;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        font-size: 5vw;
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+}
+.container{
+  max-width: 1100vw;
+  margin: 0 auto;
+  background-color: white;
+}
+.tim{
+    margin-bottom: 3vw;
+}
+.block__text{
+     color: black;
+        text-align: justify;
+        width:auto;
+        display: inline;
+        height:5vw;
+        position: static;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 3vw;
+
+}
+.text{
+        color: black;
+        text-align: left;
+        width: auto;
+        display: inline;
+        position: static;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 4vw;
+        font-weight: bold;
+        margin-left: 3vw;
+        margin-top: 20vw;
+}
+.blocks {
+  display: flex;
+  justify-content: space-between;
+}
+.block {
+  max-width: 450vw;
+}
+.block__photo {
+  text-align: center;
+  padding: 200vw;
+  border-radius: 10vw;
+  margin-bottom: 10vw;
+}
+h2 {
+        color: black;
+        text-align: center;
+        position: static;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 4vw;
         }
-    </style>
-    <img src="inicial3.png" width=100% height="auto">
-    <h1>Дорогие друзья!
-Приглашаем Вас разделить радость особенного для нас события и стать свидетелями начала нашей семейной жизни!
-Увидимся на нашей свадьбе!</h1>
-</div>
-<div class="container">
-    <h1> </h1>
-    <h1>
-    Отвечаем на ваши вопросы</h1>
-    <h2>Будет ли дресс-код?</h2>
-    <h4> - Будем очень благодарны, если вы поддержите цветовую гамму нашей свадьбы в своих нарядах.</h4>
-    <h2>Нужно ли дарить цветы?</h2>
-    <h4> - Пожалуйста, не дарите нам цветы, мы не успеем насладиться их красотой до отъезда в свадебное путешествие</h4>
-    <h2>Какие подарки предпочтительны?</h2>
-    <h4> - Удобным форматом для подарков станут конверты.</h4>
 
-    <h2>Возможно ли приехать на своем автомобиле?</h2>
-    <h4> - Да, на территории есть парковка. Для бронирования места просим заранее сообщить марку и номер автомобиля.</h4>
+</style>
 
-    <h2>Где остановиться на ночь?</h2>
-    <h4> - Для Вас подготовлен комфортный номер в коттедже с 25.07.2024 - 26.07.2024 на территории Парк-отеля "Голицын Клуб"</h4>
+    <div class="img">
+        <div class="opacity-75">
+            <img src="static/nt10.jpg" class="img-responsive" display="block" width=100% height="auto" position= "static">
+          <div class="section" id="section-guest">
+         <br>
+         <br>
+         <h3>Дорогие гости!</h3>
+<h3>Приглашаем вас разделить радость особенного для нас события и стать свидетелями начала нашей семейной жизни!</h3>
+       <h3>Увидимся на нашей свадьбе!</h3>
+       <br>
+       <br>
+       <img src="static/image.png" class="img-responsive" display="block"  width="100%" height="auto" text-align="center" position="static" >
 
-    <h2>Кому можно задать вопросы по организации мероприятия?</h2>
-    <h4> - В telegram, в день свадьбы - наш свадебный координатор Елена с радостью ответит на ваши вопросы: +7 (999) 500-22-22.</h4>
-</div>
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-                <div class="card-body">
-                    <div id="content">
-                        <ul class="timeline">
-                            <li class="event" data-date="15:00 - 15:30">
-                                <h4>Фуршет, сбор гостей</h4>
-                                <p>фуршет, фото</p>
-                            </li>
-                            <li class="event" data-date="15:30 - 16:30">
-                                <h4>Регистрация</h4>
-                                <p>Выездная регистрация</p>
-                            </li>
-                            <li class="event" data-date="16:30 - 22:30">
-                                <h4>Банкет</h4>
-                                <p>Веселье, конкурсы и танцы</p>
-                            </li>
-                            <li class="event" data-date="22:30 - 23:00pm">
-                                <h4>Окончание вечера</h4>
-                                <p>Окончание </p>
-                            </li>
-                        </ul>
-                    </div>
+        </div>
+    </div>
+   </div>
+
+                  <div class="container">
+                      <div class="section section_padding section_center" id="section-faq">
+              <div class="section-body">
+                      <br>
+                      <h1>ОТВЕЧАЕМ НА ВАШИ ВОПРОСЫ</h1>
+
+
+    <div class="text">Будет ли дресс-код?  </div>
+    <p>Мы очень хотим сделать праздник красивым и будем рады, если в своих нарядах вы поддержите цветовую гамму нашей свадьбы.</p>
+		<img src="static/Wedding.png" class="img-responsive" display="block"  width="100%" height="auto" text-align="center" position="static">
+
+    <div class="text">Нужно ли дарить цветы?  </div>
+    <p>Просим Вас не дарить цветы, так как мы не успеем насладиться их красотой до отъезда в свадебное путешествие. Если вы хотите сделать нам комплимент, замените букет книгой или букетом не из цветов.</p>
+
+  <div class="text">Какие подарки предпочтительны?</div>
+    <p>Удобным форматом для подарков станут конверты.</p>
+
+    <div class="text" >Где остановиться на ночь? </div>
+    <p>Для Вас подготовлен комфортный номер в коттедже с 25.07.2024 - 26.07.2024 на территории Парк-отеля "Голицын Клуб".</p>
+
+   <div class="text">В какое время будет заезд и выезд?</div>
+    <p>Для вашего удобства 25 июля лучше приехать в 14:30, заселение начинается в 15:00. Выезд 26 июля до 12:00.</p>
+
+    <div class="text">Есть ли парковка для автомобиля?</div>
+    <p>Да, на территории есть парковка. Для бронирования места просим заранее сообщить марку и номер автомобиля.</p>
+
+    <div class="text">Где можно задать вопросы?</div>
+    <p>В личных сообщениях в telegram или VK. Ближе к дате будет создан общий чат со всеми гостями в telegram.</p>
+
+
+            </div>
                 </div>
             </div>
+
+<div class="container">
+        <div class="section section_center section_padding" id="section-program">
+			<div class="section-body">
+				<br>
+			<h1>ПРОГРАММА СВАДЕБНОГО ДНЯ</h1>
+
+			    <div style="text-align:center">
+		            <img src="static/flow2.jpg" class="img-responsive" display="block" width="95%" height="auto" position="static">
+	            </div>
+	        </div>
         </div>
 </div>
+
 <div class="container">
 <div class="section section_center section_padding" id="section-register">
     <div class="section-body">
-        <h2>
-            <span>
-                Как добраться
-            </span>
-        </h2>
-                <p>
+        <br>
+       <h1> КАК ДОБРАТЬСЯ</h1>
+
+                <h2>
                     Парк - Отель "Голицын Клуб"
-                </p>
-                    <span>
-                        <t>
-                            Адрес: Московская область, Одинцовский городской округ, г. Голицыно, Минское шоссе, д.45.
-                        </t>
-                    </span>
+                </h2>
+
+                        <h2>
+                            Адрес: Московская область, Одинцовский городской округ, г. Голицыно, Минское шоссе, д. 45.
+                        </h2>
+
     </div>
+</div>
 </div>
 <div class="section-body section-body_fullwidth">
-    <div style="">
-    <iframe src="https://yandex.ru/map-widget/v1/?ll=36.959781%2C55.598665&mode=search&oid=112768882338&ol=biz&z=16.27" width="100%" height="300" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+    <div style="text-align:center;">
+    <div style="map">
+    <iframe src="https://yandex.ru/map-widget/v1/?ll=36.959781%2C55.598665&amp;mode=search&amp;oid=112768882338&amp;ol=biz&amp;z=16.27"
+     width="90%" height="300vw"  frameborder="1" allowfullscreen="true" style="position:static"  >
+    </iframe>
+    </div>
+     <img src="static/fioo.png" class="img-responsive" display="block" width="20%" height="auto" position="static">
+	       <div style="text-align:center">Tanya&Nikita 2024 ©</div>
     </div>
 </div>
-<div class="section section_noborder section_center" id="section-footer">
-    <div class="section-body">
-        <footer class="section__footer">
-            <div class="section__footer-description">
-                <p class="names">
-                    Tanya and Nikita 2024 ©
-                    </p>
-            </div>
-		</footer>
-	</div>
-</div>
-</div>
+
 </body>
 </html>
